@@ -5,6 +5,8 @@ programa {
      escreva("Hello World")
   }
 }
+
+
 02
 programa {
   funcao inicio() {
