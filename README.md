@@ -240,4 +240,103 @@ programa {
   }
 }
 ```
-
+## 2.15.
+```
+programa {
+  funcao inicio() {
+    cadeia usuario, senha
+		escreva("Usuário: ")
+		leia(usuario)
+		escreva("Senha: ")
+		leia(senha)
+		se (usuario == "admin" e senha == "1234") {
+			escreva("Acesso Concedido")
+		} senao {
+			escreva("Acesso Negado")
+		}
+  }
+}
+```
+## 2.16.
+```
+programa {
+  funcao inicio() {
+    real peso
+		escreva("Peso da carga (kg): ")
+		leia(peso)
+		se (peso <= 500) {
+			escreva("Transporte autorizado.")
+		} senao {
+			escreva("Excesso de peso!")
+		}
+  }
+}
+```
+## 2.17.
+```
+programa {
+  funcao inicio() {
+    real atual, novo
+		escreva("Salário atual: ")
+		leia(atual)
+		se (atual < 2500) {
+			novo = atual * 1.10
+		} senao {
+			novo = atual * 1.05
+		}
+		escreva("Novo salário: R$ ", novo)
+  }
+}
+```
+## 2.18.
+```
+programa {
+  funcao inicio() {
+    real comp
+		escreva("Comprimento da peça (cm): ")
+		leia(comp)
+		se (comp < 15) {
+			escreva("Refugo")
+		} senao se (comp <= 20) {
+			escreva("Padrão")
+		} senao {
+			escreva("Premium")
+		}
+  }
+}
+```
+## 2.19.
+```
+programa {
+  funcao inicio() {
+    real t1, t2, t3, media
+		escreva("Nota teste 1: ")
+		leia(t1)
+		escreva("Nota teste 2: ")
+		leia(t2)
+		escreva("Nota teste 3: ")
+		leia(t3)
+		media = (t1 + t2 + t3) / 3
+		se (media >= 7) {
+			escreva("Operador Ouro")
+		} senao {
+			escreva("Reciclagem")
+		}
+  }
+}
+```
+## 2.20.
+```
+programa {
+  funcao inicio() {
+   inteiro ano
+		escreva("Digite o ano: ")
+		leia(ano)
+		se ((ano % 4 == 0 e ano % 100 != 0) ou (ano % 400 == 0)) {
+			escreva("Ano bissexto: Manutenção Geral!")
+		} senao {
+			escreva("Ano comum.")
+		} 
+  }
+}
+```
